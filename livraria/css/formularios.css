@@ -1,0 +1,44 @@
+.caixa-formulario { display: flex; flex-direction: column; align-items: center; }
+
+.formulario {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+label { display: block; margin: 10px 0 4px; font-weight: bold; }
+
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.mostrar-senha { font-weight: normal; font-size: 14px; }
+.mostrar-senha input { width: auto; margin-right: 5px; }
+
+.link-extra { font-size: 14px; margin-bottom: 0; }
+.link-extra a { color: #5b3a29; }
+
+.botao {
+    display: inline-block;
+    background: #5b3a29;
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.acoes .botao { margin-top: 0; }
+.botao:hover { opacity: 0.85; }
+.botao.perigo { background: #c62828; }
+.botao.secundario { background: #888; }

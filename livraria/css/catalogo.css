@@ -1,0 +1,70 @@
+/* Filtros */
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.filtros input[type="text"] { flex: 1; min-width: 200px; }
+.filtros select { padding: 8px; border: 1px solid #bbb; border-radius: 4px; }
+.filtros .botao { margin-top: 0; }
+
+.resultado { color: #777; font-size: 14px; }
+.vazio { text-align: center; padding: 30px; background: #fff; border-radius: 8px; }
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.capa {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-left: 8px solid rgba(0, 0, 0, 0.25);
+}
+
+.conteudo { padding: 15px; flex: 1; display: flex; flex-direction: column; }
+
+.etiqueta {
+    align-self: flex-start;
+    background: #efe3d0;
+    color: #5b3a29;
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+.card h3 { margin: 0 0 5px; font-size: 18px; }
+.autor { color: #777; font-size: 14px; margin: 0 0 10px; }
+.descricao { font-size: 14px; flex: 1; }
+.preco { font-weight: bold; color: #2e7d32; font-size: 20px; margin: 10px 0 0; }
+
+.acoes { display: flex; gap: 8px; margin-top: 10px; }
+.acoes form { margin: 0; }

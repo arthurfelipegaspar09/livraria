@@ -1,0 +1,44 @@
+* { box-sizing: border-box; }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f1ea;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #5b3a29;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 { margin: 0; }
+header p { margin: 5px 0 15px; font-style: italic; }
+
+nav a, nav span { color: #fff; margin: 0 10px; }
+nav a { text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+nav .usuario { color: #e0c9a6; }
+
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+footer {
+    background: #3b2418;
+    color: #ddd;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+footer p { margin: 4px 0; }
